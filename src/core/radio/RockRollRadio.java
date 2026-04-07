@@ -13,6 +13,7 @@ import java.util.ArrayList;
  * @author Gabriela Campo
  */
 public class RockRollRadio {
+
     private ArrayList<Artista> artistas = new ArrayList<>();
     private ArrayList<Cancion> canciones = new ArrayList<>();
     private ArrayList<Invitado> invitados = new ArrayList<>();
@@ -26,12 +27,25 @@ public class RockRollRadio {
         this.locutores = new ArrayList<>();
         this.programas = new ArrayList<>();
     }
-    
-    public void addArtista(Artista artista){
-        if(!this.artistas.contains(artista)) this.artistas.add(artista);
+
+    public void addArtista(Artista artista) {
+        if (!this.artistas.contains(artista)) {
+            this.artistas.add(artista);
+        }
     }
-        public void addCancion(Cancion cancion){
-        if(!this.canciones.contains(cancion)) this.canciones.add(cancion);
+
+    public void addCancion(Cancion cancion) {
+        if (!this.canciones.contains(cancion)) {
+            this.canciones.add(cancion);
+        }
     }
-    
+    public Artista getArtista(int index){
+        Artista art = this.artistas.get(index);
+        return art;
+    }
+    public void addLocutor(Locutor loc) {
+        if (!this.locutores.contains(loc)) {
+            this.locutores.add(loc);
+        }
+    }
 }

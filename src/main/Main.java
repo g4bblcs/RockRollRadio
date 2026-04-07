@@ -4,6 +4,13 @@
  */
 package main;
 
+import core.person.Artista;
+import core.person.Invitado;
+import core.person.Locutor;
+import core.radio.Cancion;
+import core.radio.Emision;
+import core.radio.Genero;
+import core.radio.Programa;
 import core.radio.RockRollRadio;
 
 /**

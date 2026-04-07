@@ -4,6 +4,8 @@
  */
 package main;
 
+import core.radio.RockRollRadio;
+
 /**
  *
  * @author Gabriela Campo
